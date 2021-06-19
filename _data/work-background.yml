@@ -1,0 +1,67 @@
+- title: Working Student / Software Development at Hannes Geist, Berlin
+  from: Juni 2020
+  to: January 2021
+  duration: 6 months
+  certificate: assets/pdf/certificate/HannesGeist.pdf
+  description:
+            <ul>
+              <li>Web development on the basis of JavaScript with framework VueJS for frontend and with Java for backend</li>
+              <li>Developed a 3D website with a library such as Three.JS</li>
+              <li>Customized the Rich Text Editor for Contentful</li>
+              <li>Integration of the version control system Git and the ticket system Clickup with an independent way of working</li>
+            </ul>
+
+- title: Intern / Web Development at Stryking Entertaintment GmbH, Berlin
+  from: September 2019
+  to: January 2020 
+  duration: 5 months
+  certificate: assets/pdf/certificate/Stryking.pdf
+  report: assets/pdf/certificate/Praktikumsbericht.pdf
+  description:
+            <ul>
+              <li>Created a landing page about auction of player cards licensed with FC Bayern Munich using HTML, CSS, JavaScript and React</li>
+              <li>Collected and published data about injury status of players on Football-Stars page using Python and MySQL</li>
+              <li>Updated the NFT (Non Fungible Token) Metadata page and maintained the data on the Open Sea page (a marketplace for crypto collectibles)</li>
+              <li>Image processing (resizing, cropping, converting) of the football players picture on Football-Stars page</li>
+            </ul>
+  
+
+- title: Working Student / Software Development at 4scotty, Berlin
+  from: December 2018
+  to: April 2019
+  duration: 5 months
+  certificate: assets/pdf/certificate/4scotty.pdf
+  description: 
+            <ul>
+              <li>Corrected CDCTs (Consumer Driven Contract Tests) for REST API endpoints</li>
+              <li>Created a Relation Database Map (Diagram) for all entities in endpoints of micro-services</li>
+              <li>GraphQL PoC (Proof of Concept) for the new platform 4engineers.io (schema,types, queries, mutators)</li>
+              <li>Created Golden Test Data and CDCTs for new GraphQL endpoints</li>
+              <li>Gave a presentation for REST vs. GraphQL</li>
+            </ul>
+
+- title: Working Student / Web Development at integral-learning GmbH Berlin
+  from: October 2018
+  to: January 2019
+  duration: 4 months
+  certificate: 
+  description: 
+            <ul>
+              <li>Created Mock Ups for data visualization about student progress in form of diagrams/charts</li>
+              <li>Implementation of data visualization on OMB+ (Online Mathematik Brückenkurs) page using HTML, CSS, JavaScript and React</li>
+              <li>Giving a presentation for the end result at the Showtime (project exhibition event)</li>
+            </ul>
+
+
+- title: Working Student / Backend Development at Talentwunder GmbH, Berlin
+  from: July 2018
+  to: November 2018
+  duration: 5 months
+  certificate: assets/pdf/certificate/Talentwunder.pdf
+  description: 
+            <ul>
+              <li>Optimization and development of data scraping (Web-crawler) using Groovy, Selenium & Java class Jsoup as Frameworks</li>
+              <li>Analyzing the HTML-website structure & content incl. processing JSON data</li>
+              <li>Database management using MongoDB & MySQL Workbench</li>
+              <li>Analyzing and reporting bugs in the development</li>
+            </ul>

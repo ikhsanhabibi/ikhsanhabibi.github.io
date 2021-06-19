@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ThinkQuest : This is Photos of My School</title>
+<link rel="stylesheet" href="tq/static_project.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="tq/static_popups.css" type="text/css" media="screen" charset="utf-8" />
+
+<script src="tq/apex_ns_3_1.js" type="text/javascript"></script>
+<script src="tq/apex_3_1.js" type="text/javascript"></script>
+<script src="tq/apex_get_3_1.js" type="text/javascript"></script>
+
+<script language="JavaScript" type="text/javascript">
+function f_showPicture(p_caller, p_which) {
+  var l_seqno;
+
+  switch (p_which) {
+    case 'PREV':
+      l_seqno = (g_current > 0 ? g_current : g_pictures.length) - 1;
+      break;
+    case 'NEXT':
+      l_seqno = (g_current + 1) % g_pictures.length;
+      break;
+  }
+
+  $x('pic_position').innerHTML = g_positions[l_seqno];
+  $x('pic_image').src = g_pictures[l_seqno];
+  $x('pic_caption').innerHTML = g_captions[l_seqno];
+  g_current = l_seqno;
+
+  if (p_caller) {
+    p_caller.blur();
+  }
+  return false;
+}
+
+function f_loadFirst() {
+  var l_seqno = String(location.hash).replace(/^#/, '');
+  if (l_seqno) {
+    g_current = l_seqno - 2;
+    f_showPicture(null, 'NEXT');
+  }
+
+  // also, preload all images
+  var l_img = new Image();
+  for (i = 0; i < g_pictures.length; i++) {
+    if (i != g_current) {
+      l_img.src = g_pictures[i];
+    }
+  }
+}
+
+function f_close() {
+  try {
+    self.opener.focus();
+  } catch (e) {
+  }
+  window.close();
+}
+</script>
+<!-- reset ul again after APEX changes it -->
+<style type="text/css">
+ul {
+margin:0;
+padding:0;
+}
+.timing {
+color: #fff;
+float: left;
+}
+</style>
+</head>
+<body onload="f_loadFirst()" class="popup">
+<script language="JavaScript" type="text/javascript">
+var g_pictures = new Array();
+var g_captions = new Array();
+var g_positions = new Array();
+
+g_pictures[0] = 'files/zzzz0283_l.jpg';
+g_captions[0] = 'My school has a greenhouse which use to grow many kind of plant. There is some of rare plant that we care on this greenhouse.<br />
+<br />
+(resource : private document)';
+g_positions[0] = '1 of 3';
+
+g_pictures[1] = 'files/zzzz0284_l.jpg';
+g_captions[1] = 'My school also have a garden that grown by many kind of ornamental plants, production plants, and medicinal plants.<br />
+<br />
+(resource : private document)';
+g_positions[1] = '2 of 3';
+
+g_pictures[2] = 'files/zzzz0285_l.jpg';
+g_captions[2] = 'My school has a fish pool. In that pool, we have many of freshwater catfish and indigo fish.<br />
+<br />
+(resource : private document)';
+g_positions[2] = '3 of 3';
+
+var g_current = 0;
+</script>
+<h1 style="float: left">This is Photos of My School</h1>
+<ul class="pagination_links"><li class="prev"><a href="#" onclick="return f_showPicture(this, 'PREV')" title="Previous"></a></li><li id="pic_position" style="padding: 0px 20px">&nbsp;</li><li class="next"><a href="#" onclick="return f_showPicture(this, 'NEXT')" title="Next"></a></li></ul>
+<div class="clear" style="height: 0px"></div>
+<table style="width: 536px; height: 357px"><tr><td align="center"><img id="pic_image" src="tq/s.gif" /></td></tr></table>
+<p id="pic_caption" style="padding-top: 10px">&nbsp;</p>
+<div  class="buttons_right" ><a href="javascript:void(f_close())" class="blue_button"><span>Close</span></a></div>
+<div class="clear"></div>
+<script type="text/javascript">
+<!-- 
+
+//-->
+</script></body>
+</html>

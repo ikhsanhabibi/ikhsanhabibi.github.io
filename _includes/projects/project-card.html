@@ -1,0 +1,34 @@
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+    <div class="project card text-dark">
+        {%- if project_img -%}
+        <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" /> {%- endif -%}
+
+
+        <div class="card-body">
+            <h5 id="{{ project_id }}-name" class="card-title">
+               {{ project_name }}
+            </h5>
+            <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
+            <p class="card-text">
+                {% for tool in project_tools %}
+                <span class="badge badge-pill text-primary">{{ tool }}</span> {% endfor %}
+            </p>
+        </div>
+
+        <div class="card-footer">
+
+            <ul class="nav justify-content-center" id="{{ project_id }}-desc" class="card-text">
+                {% if project_github == null %} {% else %}
+                <li class="nav-item"> <a href="{{project_github}}" target="_blank" class="badge badge-pill badge-secondary border border-outlined">GitHub</a></li>
+                {% endif %} {% if project_report == null %} {% else %}
+                <li class="nav-item"> <a href="/{{project_report}}" target="_blank" class="badge badge-pill badge-success border border-outlined">Report</a></li>
+                {% endif %} {% if project_website == null %} {% else %}
+                <li class="nav-item"> <a href="{{project_website}}" target="_blank" class="badge badge-pill badge-info border border-outlined">Website</a></li>
+                {% endif %} {% if project_url == null %} {% else %}
+                <li class="nav-item"> <a href="{{project_url}}" target="_blank" class="badge badge-pill badge-warning border border-outlined">Source</a></li>
+                {% endif %}
+            </ul>
+        </div>
+
+    </div>
+</div>

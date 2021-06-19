@@ -1,0 +1,25 @@
+<div class="col mt-4">
+  <div class="timeline-body">
+    {% for item in site.data.work-background %}
+      <div class="timeline-item">
+        <div class="content">
+          <h2>{{ item.title }}</h2>
+          <h6 class="date">{{ item.from }} — {{ item.to }} | {{ item.duration }} 
+            {% if item.report == null %}
+            {% else %}
+               | <a href="/{{item.report}}" target="_blank">📝Report</a>
+            {% endif %}
+
+            {% if item.certificate == null %}
+            {% else %}
+            | <a href="/{{item.certificate}}" target="_blank">📜Certificate</a>
+            {% endif %}
+
+            
+          </h6>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

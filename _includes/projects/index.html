@@ -1,0 +1,35 @@
+
+<style>
+ 
+  h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  }
+  </style>
+
+<br/>
+<h1>Projects</h1>
+
+<div class="card-columns m-3 mt-5">
+
+  <!-- Local Projects -->
+  {% for project in site.projects %}
+
+    {%- assign project_type  = "local" -%}
+    {%- assign project_id    = project.name | slugify -%}
+    {%- assign project_img   = project.image -%}
+    {%- assign project_name  = project.name -%}
+    {%- assign project_desc  = project.description -%}
+    {%- assign project_tools = project.tools -%}
+    {%- assign project_github = project.github -%}
+    {%- assign project_report = project.report -%}
+    {%- assign project_website = project.website -%}
+    {%- assign project_url = project.external_url -%}
+
+
+    {% include projects/project-card.html %}
+
+  {% endfor %}
+
+</div>

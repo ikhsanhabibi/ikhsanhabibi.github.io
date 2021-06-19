@@ -1,0 +1,77 @@
+### Site Settings ###
+title               : Ikhsan Habibi
+description         : "Master's degree student of Media and Computer Science at the Humboldt University of Berlin" 
+baseurl             : ""                                      # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : ikhsanhabibi/ikhsanhabibi.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : YoussefRaafatNasry/portfolYOU
+
+### Plugins ###
+plugins:
+  - jemoji
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+  - documentation/partials/**                           # For Documentation Only
+
+### Author Info ###
+author:
+  name              : Ikhsan Habibi
+  image             : https://user-images.githubusercontent.com/33756873/74554140-22a2ce00-4f59-11ea-8084-0c1d4b8e61e8.jpg
+# behance           : your_username
+# dribbble          : your_username
+  email             : ikhsan_habibi@hotmail.com
+# facebook          : your_username
+  github            : ikhsanhabibi
+# gitlab            : your_username
+  instagram         : ikhsanhabibi
+  linkedin          : ikhsan-habibi-1baa89164
+# medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+# twitter           : your_username
+# vimeo             : your_username
+  youtube           : user/ikhsanhabibi48
+
+
+### Posts ###
+permalink: /blog/:title
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  elements:                                             # For Documentation Only
+    output: true                                        # For Documentation Only
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:                                              # For Documentation Only
+      path: ""                                          # For Documentation Only
+      type: "elements"                                  # For Documentation Only
+    values:                                             # For Documentation Only
+      layout: "element"                                 # For Documentation Only
+
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
+
+github: [metadata]
+
+livereload: true

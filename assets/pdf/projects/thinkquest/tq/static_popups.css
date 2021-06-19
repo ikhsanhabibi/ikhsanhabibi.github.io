@@ -1,0 +1,53 @@
+body{margin:0;padding:10px;font-family:Verdana,sans-serif;background-color: #FFFFFF;}
+h1,h2,h3{font-weight:bold; padding: 0 0 10px 0;}
+	h1.bright,h2.bright,h3.bright {color: #FF9900; }
+	h1{font-size:16px;}
+	h2{font-size:13px;}
+	h3{font-size:11px;}
+
+p{font-size:11px; padding: 0 0 10px 0;}
+
+	h1.bold, h2.bold, h3.bold, h5.bold { font-weight: bold; }
+	h1.right, h2.right, h3.right, h5.right { text-align: right; }
+	h1.left, h2.left, h3.left, h5.left { text-align: left; }
+	h1.center, h2.center, h3.center, h5.center { text-align: center; }
+	h1.bright, h2.bright, h3.bright, h5.bright { color: #FF9900; }
+	h1.dim, h2.dim, h3.dim, h5.dim { color: #999; }
+	h1.white, h2.white, h3.white { color: #FFF; }
+	h1.borderl, h2.borderl, h3.borderl, h5.borderl { border-left: 1px solid #FFF; }
+	h1.borderr, h2.borderr, h3.borderr, h5.borderr { border-right: 1px solid #FFF; }
+	h1.borderlr, h2.borderlr, h3.borderlr, h5.borderlr { border-left: 1px solid #FFF; border-right: 1px solid #FFF; }
+  h1.no_top_padding,  h2.no_top_padding,  h3.no_top_padding,  h4.no_top_padding { padding-top: 0; }
+  h1.no_bottom_padding,  h2.no_bottom_padding,  h3.no_bottom_padding,  h4.no_bottom_padding { padding-bottom: 0; }
+  h1.no_right_padding,  h2.no_right_padding,  h3.no_right_padding,  h4.no_right_padding { padding-right: 0;; }
+  h1.no_left_padding,  h2.no_left_padding,  h3.no_left_padding,  h4.no_left_padding { padding-left: 0; }
+	
+
+h4 {
+	color: #FFFFFF;
+	line-height: 20px;
+	padding: 0 8px;
+	font-weight: bold;
+	font-size: 11px;
+	background: url(moduleHeaderBG.gif) top left repeat-x;
+	margin: 0;
+	}
+  h4.first {
+	 background-position: 0 -40px;
+	 }
+  h4.blue { background-position: 0 -20px; }
+	  h4.blue.first { background-position: 0 -60px; }
+  h4.orange { background-position: 0 0; }
+	  h4.orange.first { background-position: 0 -40px; }
+  h4 span { float: right; }
+	  h4 span a { color: #FFF; }
+	  h5 {
+	font-size: 11px;
+	background: url(moduleSubHeaderBG.gif) top left no-repeat;
+	line-height: 20px;
+	padding: 0 8px;
+	}
+  h5.checked {
+		background-position: right 0;
+		padding: 0 20px 0 8px;
+		}	

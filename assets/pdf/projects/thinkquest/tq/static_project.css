@@ -1,0 +1,759 @@
+/* *** /ui/global/reset.css *** */
+
+/*
+This resets the css for all browsers.
+*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;}
+
+/* Specific Resets to remove APEX overrides */
+#content ul, #content_outwrap ul, .side_col ul {margin: 0;}
+
+/* *** /ui/global/style.css *** */
+
+body{
+	background-color: #000;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+#content_outwrap {
+	background-color: #3366CC;
+	clear: both;
+	}
+.clear {
+	clear: both;
+	}
+a img {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+/* Place an extra div for IE min-height issue */
+.ie_minheight_fix {
+	float: right;
+	height: 400px;
+	width: 0px;
+	visibility: hidden;
+	}
+
+#content {
+	background-color: #FFF;
+	width: 760px;
+	margin: 0 auto;
+	}
+
+	/* Apply left float to all seperate columns */
+	#content .mid_col, #content .side_col {
+		float: left;
+		overflow: hidden;
+		min-height: 400px;
+		padding-bottom: 10px;
+		}
+		#content .mid_col {
+			}
+	/* One Column Layout */
+	.one_col {
+
+		}
+		.one_col .mid_col {
+			width: 758px;
+			margin: 0 1px;
+			}
+
+	/* Two Column Layouts */
+	.two_col_right {
+		background: url(2colR.gif) top left repeat-y;
+		}
+		.two_col_right .mid_col {
+			margin-right: 1px;
+			width: 559px;
+			}
+		.two_col_right .side_col {
+			border-left: 1px solid #FFF; /* Fix for 2px margin bug */
+			margin-right: 1px;
+			}
+
+	.two_col_left {
+		background: url(2colL.gif) repeat-y;
+		}
+		.two_col_left .mid_col {
+			margin-left: 1px;
+			width: 559px;
+			}
+
+	/* Three Column */
+	.three_col {
+		background: url(3col.gif) repeat-y;
+		}
+		.three_col .mid_col {
+			width: 360px;
+			margin: 0 1px;
+			}
+	/* Left and right side columns */
+	.side_col {
+		width: 198px;;
+		}
+	.side_col.right {
+		border-right: 1px solid #FFF;
+	 }
+	.side_col.left {
+		border-left: 1px solid #FFF;
+	 }
+
+#content h1 {
+	font-size: 20px;
+	padding: 8px;
+	}
+#content h2 {
+	font-size: 16px;
+	padding: 8px;
+	}
+	#content h2.blue{
+		color: #3366CC;
+		}
+#content h3 {
+	font-size: 13px;
+	padding: 8px;
+	}
+	#content .mid_col h3.red {
+		color: #FF0000;
+		}
+
+	/* Additional Styles for H1, H2, and H3 */
+	h1.bold, h2.bold, h3.bold, h5.bold { font-weight: bold; }
+	h1.right, h2.right, h3.right, h5.right { text-align: right; }
+	h1.left, h2.left, h3.left, h5.left { text-align: left; }
+	h1.center, h2.center, h3.center, h5.center { text-align: center; }
+	h1.bright, h2.bright, h3.bright, h5.bright { color: #FF9900; }
+	h1.dim, h2.dim, h3.dim, h5.dim { color: #999; }
+	h1.white, h2.white, h3.white { color: #FFF; }
+	h1.borderl, h2.borderl, h3.borderl, h5.borderl { border-left: 1px solid #FFF; }
+	h1.borderr, h2.borderr, h3.borderr, h5.borderr { border-right: 1px solid #FFF; }
+	h1.borderlr, h2.borderlr, h3.borderlr, h5.borderlr { border-left: 1px solid #FFF; border-right: 1px solid #FFF; }
+	#content h1.no_top_padding, #content h2.no_top_padding, #content h3.no_top_padding, #content h4.no_top_padding { padding-top: 0; }
+	#content h1.no_bottom_padding, #content h2.no_bottom_padding, #content h3.no_bottom_padding, #content h4.no_bottom_padding { padding-bottom: 0; }
+	#content h1.no_right_padding, #content h2.no_right_padding, #content h3.no_right_padding, #content h4.no_right_padding { padding-right: 0;; }
+	#content h1.no_left_padding, #content h2.no_left_padding, #content h3.no_left_padding, #content h4.no_left_padding { padding-left: 0; }
+
+#content .side_col p {
+	font-size: 11px;
+	margin: 0;
+	padding: 8px 12px;
+	}
+
+#content a {
+	color: #3366CC;
+	text-decoration: none;
+	}
+	#content a:hover {
+		color: #FF0000;
+		text-decoration: none;
+		}
+
+div.icon_info {
+	margin: 8px 12px;
+	}
+#content div.icon_info.separator {
+	margin: 0 12px 8px 12px;
+	border-top: 1px solid #CCC;
+	}
+div.icon_info.no_separator {
+	margin: 8px 12px 0 12px;
+	border-top: none;
+	}
+div.icon_info p {
+	padding: 8px 0 8px 38px;
+	font-size: 13px;
+	}
+	div.icon_info p.timeline {background: url(icon_waiting.gif) 10px 0 no-repeat;}
+	div.icon_info p span {color: #CCC;}
+	div.icon_info p span.small {
+		font-size: 11px;
+		}
+	div.icon_info p.no_padding {
+		padding: 8px 0;
+		}
+	div.icon_info p.note {padding: 8px;}
+	div.icon_info p.category_icon {
+		padding: 0 8px 0 0px;;
+		}
+		p.category_icon span {
+			margin-right: 6px;
+			}
+	#content div.icon_info p strong.heading {
+		display: inline;
+		font-weight: bold;
+		}
+
+/*Added for new Project Summary*/
+#content div.icon_info h2.about {
+  padding: 12px 0 0 38px;
+  line-height: 24px;
+  font-weight: bold;
+  }
+  #content div.icon_info h2.about {background: url(icon_editing.gif) 4px 12px no-repeat;}
+
+p.padded {
+	padding: 8px;
+	/* Making font-size 13 */
+	font-size: 13px;
+	}
+	p.padded.no_top_padding {
+		padding-top: 0;
+		}
+	p.padded.no_bottom_padding {
+		padding-bottom: 0;
+		}
+	p.padded.sides {
+		padding-top: 0;
+		padding-bottom: 0;
+		}
+
+#content ul.content_list {
+	margin: 8px;
+	}
+	ul.content_list li {
+		margin-bottom: 2px;
+		padding: 8px;;
+		}
+		ul.content_list li span { }
+		ul.content_list li img {
+			float: left;
+			padding: 0 8px 0 0;
+			position: relative;
+			}
+		ul.content_list li a {
+			font-weight: bold;
+			}
+			ul.content_list.numbered li a {
+/* Removing next line for TAR# 81042 */
+/*				padding-left: 5px;*/
+				font-weight: bold;
+				}
+			ul.content_list li span.flag {
+				color: #3366CC;
+				font-size: 10px;
+/*				position: absolute;
+				right: 8px;
+				bottom: 8px;*/
+				text-align: right;
+				display: block;
+				}
+				ul.content_list li span.flag a {
+					padding: 0;
+					}
+		ul.content_list li p {
+			padding: 0;
+			line-height: normal;
+			}
+			#content .item ul.content_list.numbered p {
+				padding-left: 20px;
+				}
+	#content .item ul.content_list.not_numbered p {
+		padding: 0;
+		}
+
+	ul.content_list.theme1 li { background-color: #D0DBF2; }
+	ul.content_list.theme1 li.alternate { background-color: #FBE6B6; }
+
+ul.new_pages {
+	}
+	ul.new_pages li {
+		margin: 0;
+		background: #FFF;
+		border-bottom: 1px solid #FFFFFF;
+		border-top: 2px solid #FFFFFF;
+		}
+		ul.new_pages li.active, ul.new_pages li.active_subitem {
+			background: url(pages_list_active.gif) #FFEDD1 -4px center no-repeat;
+			border-bottom: 1px solid #D9C8AE;
+			border-top: 1px solid #D9C8AE;
+			}
+			ul.new_pages li.active.first {
+				border-top: 1px solid #FFEDD1;
+				}
+				ul.new_pages li.active.first div {
+					border-top: 1px solid #FFEDD1;
+					}
+			ul.new_pages li.active div, ul.new_pages li.active_subitem div {
+				border-top: 1px solid #FFF;
+				}
+				ul.new_pages li.active_subitem div {
+					padding-bottom: 6px;
+					}
+			/* Styles for MORE link */
+			#content ul.new_pages li.more_link {
+				text-align: right;
+				padding: 0 8px 8px 8px;
+				}
+			/* Styles specific for those with sub items */
+			ul.new_pages li.subitem div {
+				padding: 0 0 8px 0;
+				}
+				ul.new_pages li.subitem div a {
+					padding: 8px 8px 16px 32px;
+					}
+					 ul.new_pages li.active_subitem div a {
+					 	padding: 8px 24px 16px 32px;
+					 	}
+				/* Set right-padding to 24px for active items so text does not overlap on arrow */
+				ul.new_pages li.active div a {
+					padding: 8px 24px 8px 32px;
+					}
+				ul.new_pages li.subitem div ul li, ul.new_pages li.active_subitem div ul li {
+					margin: -16px 0 0 32px;
+					border-top: none;
+					border-bottom: none;
+					}
+					ul.new_pages li.subitem div li a, ul.new_pages li.active_subitem div li a {
+						padding: 0;
+						}
+		ul.new_pages li div {
+			background: url(icon_page.gif) 4px 4px no-repeat;
+			}
+			ul.new_pages li div.clear {
+				background: none;
+				}
+			/* Small Text for Membership Pending Status */
+			#content ul.new_pages li.subitem div small {
+				margin: -16px 0 0 32px;
+				display: block;
+				color: #CCC;
+				padding: 0;
+				}
+			ul.new_pages li div a {
+				line-height: 16px;
+				font-size: 11px;
+				display: block;
+				padding: 8px 24px 8px 32px;
+				overflow: hidden;
+				}
+
+.item {
+	margin: 0 0 16px 0;
+	position: relative;
+	}
+.item small {
+	padding: 4px 8px 0px 8px;
+	color: #A9A9A9;
+	font-size: 10px;
+	}
+	.item small span {
+		color: #FF9900;
+		}
+	.item small.author {
+		color: #000;
+		font-size: 11px;
+		}
+.item p.description {
+	padding: 0 8px 4px 8px;
+	line-height: normal;
+	}
+.item p {
+	padding: 4px 8px 8px 8px;
+	}
+	.item p.flagged {
+		padding: 4px 8px 0 8px;
+		color: #FF0000;
+		}
+
+#content .item ul li p {
+	padding: 0 0 0 58px;;
+	font-size: 11px;
+	line-height: 14px;
+	}
+
+.item a.debate_position {
+	line-height: 32px;
+	padding-left: 8px;
+	font-weight: bold;
+	}
+
+#content .item h2 {
+	padding: 0 8px;
+	font-weight: bold;
+	}
+
+	/* List of Colors for Titles in Think.com */
+	#content .color1 { color: #047A7C; }
+	#content .color2 { color: #D40204; }
+	#content .color3 { color: #047AA4; }
+	#content .color4 { color: #A47AA4; }
+	#content .color5 { color: #A4A604; }
+	#content .color6 { color: #A47A04; }
+	#content .color7 { color: #444244; }
+	#content .color8 { color: #04A604; }
+	#content .color9 { color: #D4027C; }
+
+.pic {
+ position: relative;
+ }
+
+.pl {
+	z-index: 1;
+	position: absolute;
+	background-color: #fff;
+	color: #36c;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	line-height: 14px;
+	height: 14px;
+	font-size: 12px;
+	}
+	.pl a {
+		text-decoration: none;
+		line-height: 14px;
+		height: 14px;
+		font-size: 12px;
+		}
+		.pl a:hover {
+			text-decoration: none;
+			color: #FFA31A;
+			line-height: 14px;
+			height: 14px;
+			font-size: 12px;
+			}
+		.pl a:active {
+			text-decoration: none;
+			color: #FFA31A;
+			line-height: 14px;
+			height: 14px;
+			font-size: 12px;
+			}
+
+	div.buttons_right {
+		float: right;
+		margin: 0 8px 8px 8px;;
+		}
+	div.buttons_right.abs_bottom {
+		margin: 0 0 2px 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		_right: 12px;
+		}
+
+	a.blue_button, a.orange_button, a.white_button {
+		display: block;
+		line-height: 20px;
+		font-size: 11px;
+		margin: 6px 0 6px 6px;
+		padding: 0 0 0 10px;
+		white-space: nowrap;
+		text-decoration: none;
+		float: left;
+		}
+		a.blue_button span, a.orange_button span, a.white_button span {
+			display: block;
+			line-height: 20px;
+			color: #FFF;
+			text-decoration: none;
+			padding: 0 10px 0 0;
+			}
+
+	/* Regular Blue Button */
+	a.blue_button {
+		background: url(thk_blue_button.gif) no-repeat left top;
+		}
+		a.blue_button span {
+			background: url(thk_blue_button.gif) no-repeat right -20px;
+			}
+			a.blue_button span.go_arrow {
+				background: url(thk_blue_button.gif) no-repeat right -80px;
+				padding: 0 24px 0 0;
+				}
+		a.blue_button:hover {
+			background: url(thk_blue_button.gif) no-repeat left -40px;
+			}
+			a.blue_button:hover span {
+				background: url(thk_blue_button.gif) no-repeat right -60px ;
+				}
+				a.blue_button:hover span.go_arrow {
+					background: url(thk_blue_button.gif) no-repeat right -100px ;
+					}
+
+ul.pagination_links {
+  padding: 0 12px;
+  float: right;
+  }
+  ul.pagination_links li {
+    float: left;
+    padding: 0 3px;
+    line-height: 12px;
+    list-style-type: none;
+    }
+    ul.pagination_links li.prev a {
+      display: block;
+      width: 12px;
+      height: 12px;
+      background: url(pagination_arrows.gif) left;
+      }
+    ul.pagination_links li.next a {
+      display: block;
+      width: 12px;
+      height: 12px;
+      background: url(pagination_arrows.gif) right;
+      }
+
+/* Project Download Page */
+div.project_created_on_link {
+  margin: 12px;
+  border-top: 1px solid #CCC;
+  padding-top: 8px;
+  clear: both;
+  }
+  div.project_created_on_link span {
+    color: #999;
+    text-align: center;
+    font-size: 11px;
+    display: block;
+    padding: 0 0 4px 0;
+    }
+  div.project_created_on_link a {
+    display: block;
+    background: url(oef_tq_logo_small.gif) no-repeat;
+    width: 160px;
+    height: 24px;
+    margin: 0 auto;
+    }
+
+/* *** /ui/thk_create_tools/style.css *** */
+
+/* *** /ui/global/v5_nav/style.css *** */
+
+ul#left_nav {
+
+	}
+	ul#left_nav li {
+		display: block;
+		border-top: 1px solid #FFFFFF;
+		}
+		ul#left_nav li a {
+			display: block;
+			padding: 6px 8px;
+			border-top: 1px solid #FFFFFF;
+			border-bottom: 1px solid #FFFFFF;
+			cursor: pointer;
+			}
+			ul#left_nav li a:active, ul#left_nav li a:focus { outline: 0; }
+			ul#left_nav li a span {
+				display: block;
+				float: left;
+				width: 24px;
+				height: 24px;
+				margin: 0 8px 0 2px;
+				cursor: pointer;
+				}
+				ul#left_nav li a span.home { background: url(v5_icons.gif) 0 0 no-repeat; }
+
+			ul#left_nav li strong {
+				display: block;
+				float: left;
+				/*width: 148px;*/
+				width: 134px;
+				overflow: hidden;
+				font-weight: normal;
+				padding-top: 5px;
+				cursor: pointer;
+				}
+			ul#left_nav li em {
+				display: block;
+				/*float: left;*/
+				width: 148px;
+				font-style: normal;
+				font-size: 10px;
+				color: #FF0000;
+				cursor: pointer;
+				}
+				* html ul#left_nav li em {
+					margin-left: 36px;
+					}
+		ul#left_nav li.active, ul#left_nav li.active_first {
+			background: url(v5_active_bg.gif) right center no-repeat #FFEBCC;
+			border-top: 1px solid #D4C6AF;
+			}
+			ul#left_nav li.active_first, ul#left_nav li.active_first a {
+				border-top: 1px solid #FFEBCC;
+				}
+			ul#left_nav li.active_first a {
+				border-bottom: 1px solid #D4C6AF;
+				}
+			ul#left_nav li.active a {
+				border-top: 1px solid #FFFFFF;
+				border-bottom: 1px solid #D4C6AF;
+				color: #000000;
+				}
+
+/* *** /ui/global/projects_list.css *** */
+
+p.category_icon {
+	padding: 0;
+	margin: 0;
+	}
+
+p.category_icon span, ul#projects li span {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 20px;
+	background: url(cat_icons.gif) top left no-repeat;
+	text-align: center;
+	font-size: 10px;
+	color: #999;
+	}
+	p.category_icon span.arts, ul#projects span.arts{ background-position:0 0; }
+	p.category_icon span.books, ul#projects span.books{ background-position:-40px 0; }
+	p.category_icon span.business, ul#projects span.business{ background-position:-80px 0; }
+	p.category_icon span.computers, ul#projects span.computers{ background-position:-120px 0; }
+	p.category_icon span.geography, ul#projects span.geography { background-position:-160px 0; }
+	p.category_icon span.health, ul#projects span.health{ background-position:-200px 0; }
+	p.category_icon span.history, ul#projects span.history{ background-position:-240px 0; }
+	p.category_icon span.math, ul#projects span.math{ background-position:-280px 0; }
+	p.category_icon span.philosophy, ul#projects span.philosophy{ background-position:-320px 0; }
+	p.category_icon span.science, ul#projects span.science{ background-position:-360px 0; }
+	p.category_icon span.socialsciences, ul#projects span.socialsciences{ background-position:-400px 0; }
+	p.category_icon span.sports, ul#projects span.sports{ background-position:-440px 0; }
+	p.category_icon span.folder, ul#projects span.folder{ background-position:-480px 0; }
+	p.category_icon span.organization, ul#projects span.organization{ background-position:-520px 0; }
+
+#content small {
+	display: block;
+	font-size: 10px;
+	padding: 4px 8px 0 8px;
+	}
+
+/* *** /ui/global/headings.css *** */
+
+#content h1, #content h2, #content h3 {
+  padding-right: 11px;
+  padding-left: 11px;
+}
+  #content h1.top, #content h2.top, #content h3.top {
+    padding-top: 16px;
+  }
+
+/* *** /ui/tq_narrative/preview.css *** */
+
+/* Add a blue background and some margin for the top */
+body {
+	margin: 20px 0;
+	background-color: #3366CC;
+	}
+
+/* Rich text editor styles */
+/* base.css, body #content div.rich_description  part of YUI's CSS Foundation */
+body #content div.rich_description hr {
+	margin:auto;  
+}
+body #content div.rich_description h1 {
+	font-size:138.5%;  
+}
+body #content div.rich_description h2 {
+	font-size:123.1%; 
+}
+body #content div.rich_description h3 {
+	font-size:108%;  
+}
+body #content div.rich_description h4 {
+	font-size:100%;  
+}
+body #content div.rich_description h5 {
+	font-size:92.59%;  
+}
+body #content div.rich_description h6 {
+	font-size:82.29%;  
+}
+body #content div.rich_description h1, body #content div.rich_description h2, body #content div.rich_description h3, body #content div.rich_description h4, body #content div.rich_description h5, body #content div.rich_description h6 {
+	margin:1em 0;
+        background: none;
+        color: inherit;
+        padding: 0px;
+}
+body #content div.rich_description h1, body #content div.rich_description h2, body #content div.rich_description h3, body #content div.rich_description h4, body #content div.rich_description h5, body #content div.rich_description h6, body #content div.rich_description strong {
+	/*bringing boldness back to headers and the strong element*/
+	font-weight:bold; 
+}
+abbr, body #content div.rich_description acronym {
+	/*indicating to users that more info is available */
+	border-bottom:1px dotted #000;
+	cursor:help;
+} 
+body #content div.rich_description em {
+	/*bringing italics back to the em element*/
+	font-style:italic;
+}
+body #content div.rich_description blockquote, body #content div.rich_description ul, body #content div.rich_description ol, body #content div.rich_description dl {
+	/*giving blockquotes and lists room to breath*/
+	margin:1em;
+}
+body #content div.rich_description ol, body #content div.rich_description ul, body #content div.rich_description dl {
+	/*bringing lists on to the page with breathing room */
+	margin-left:2em;
+}
+body #content div.rich_description ol li {
+	/*giving OL's LIs generated numbers*/
+	list-style: decimal outside;	
+}
+body #content div.rich_description ul li {
+	/*giving UL's LIs generated disc markers*/
+	list-style: disc outside;
+}
+body #content div.rich_description dl dd {
+	/*giving UL's LIs generated numbers*/
+	margin-left:1em;
+}
+body #content div.rich_description th, body #content div.rich_description td {
+	/*borders and padding to make the table readable*/
+	border:1px solid #000;
+	padding:.5em;
+}
+body #content div.rich_description th {
+	/*distinguishing table headers from data cells*/
+	font-weight:bold;
+	text-align:center;
+}
+body #content div.rich_description caption {
+	/*coordinated marking to match cell's padding*/
+	margin-bottom:.5em;
+	/*centered so it doesn't blend in to other content*/
+	text-align:center;
+}
+body #content div.rich_description p, body #content div.rich_description fieldset, body #content div.rich_description table, body #content div.rich_description div, body #content div.rich_description address, body #content div.rich_description caption, body #content div.rich_description cite, body #content div.rich_description code {
+	/*so things don't run into each other*/
+	margin-bottom:1em;
+}
+
+body #content .item div.rich_description p {
+	padding: 0px 0px 0px 0px;
+	}
+
+body #content div.rich_description address {
+	/*so things don't run into each other*/
+	font-style: italic;
+}
+
+/*ul, body #content div.rich_description dl { 
+		 margin-left:2em; 
+}
+ol li { 
+		 list-style: decimal outside;			
+}
+ul li { 
+		 list-style: disc outside; 
+}
+dl dd { 
+		 margin-left:1em; 
+}*/
